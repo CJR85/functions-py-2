@@ -20,7 +20,12 @@ def contains_pickle(*args):
 # count_fails(99,48,79,36) -------> 2
 # count_fails(85,78,91) ----------> 0
 # count_fails(50,41,47,74,76,81) -> 3
-
+def count_fails(*scores):
+    count = 0
+    for score in scores:
+        if score <= 50:
+            count += 1
+    return count
 
 
 
