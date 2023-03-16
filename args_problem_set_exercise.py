@@ -5,7 +5,8 @@
 
 #  contains_pickle("red", 45, "pickle", [])  --> True
 #  contains_pickle(1,2, "blue") ---------------> False
-
+def contains_pickle(*args):
+    return "pickle" in args
     
     
 
