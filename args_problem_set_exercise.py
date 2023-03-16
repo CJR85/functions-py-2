@@ -38,6 +38,11 @@ def count_fails(*scores):
 # get_top_students(tim=91, stacy=83, carlos=97, jim=69) -> ['tim', 'carlos']
 # get_top_students(colt=61, elton=76) -------------------> []
 # get_top_students(kitty=80, blue=95, toad=91)-----------> ['blue', 'toad']
-
+def get_top_students(**kwargs):
+    top_students = []
+    for student, score in kwargs.items():
+        if score >= 90:
+            top_students.append(student)
+    return top_students
 
 
